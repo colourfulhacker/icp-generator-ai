@@ -1,0 +1,5 @@
+{
+  "name": "ICP Generator AI",
+  "description": "A specialized tool that analyzes company service catalogs to generate detailed Ideal Customer Profiles (ICPs) using Gemini AI.",
+  "requestFramePermissions": []
+}
