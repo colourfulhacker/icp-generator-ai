@@ -53,14 +53,7 @@ const App: React.FC = () => {
   return (
     <ErrorBoundary>
       <ErrorBoundary>
-        <div className="min-h-screen bg-slate-950 font-sans text-slate-200 relative overflow-x-hidden">
-          {/* Background Gradients */}
-          <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-0">
-            <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-900/20 rounded-full blur-[128px]"></div>
-            <div className="absolute top-[20%] right-[-5%] w-[30%] h-[30%] bg-amber-900/10 rounded-full blur-[128px]"></div>
-            <div className="absolute bottom-[-10%] left-[20%] w-[30%] h-[30%] bg-blue-900/10 rounded-full blur-[128px]"></div>
-          </div>
-
+        <div className="min-h-screen font-sans text-slate-200 relative overflow-x-hidden">
           {/* Main Content */}
           <main className="w-full max-w-7xl mx-auto px-4 pb-12 relative z-10">
             <div className="text-center py-12 md:py-20">
