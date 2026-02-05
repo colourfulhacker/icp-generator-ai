@@ -92,11 +92,16 @@ export const ICPResult: React.FC<ICPResultProps> = ({ data, originalInput, onRes
 
     // Personalization Logic
     if (clientName) {
+      subject = subject.replace(/\[Client Name\]/gi, clientName);
+      subject = subject.replace(/\[Company Name\]/gi, clientName);
       body = body.replace(/\[Client Name\]/gi, clientName);
-      body = body.replace(/\[Company Name\]/gi, clientName); // Fallback if AI used different placeholder
+      body = body.replace(/\[Company Name\]/gi, clientName);
     } else {
       // If no specific client, replace with generic but professional placeholder
+      subject = subject.replace(/\[Client Name\]/gi, "Potential Partner");
+      subject = subject.replace(/\[Company Name\]/gi, "Potential Partner");
       body = body.replace(/\[Client Name\]/gi, "Potential Partner");
+      body = body.replace(/\[Company Name\]/gi, "Potential Partner");
     }
 
     setProposalSubject(subject);
